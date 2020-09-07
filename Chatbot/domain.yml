@@ -1,0 +1,38 @@
+intents:
+  - greet
+  - goodbye
+  - course
+  - confirm
+  - deny
+  - thanks
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_welcome
+  - respond_course
+
+entities:
+  - language
+
+responses:
+  utter_greet:
+  - text: "Buen día! Que lenguaje tenes ganas de aprender?"
+  - text: "Holaaa! :D Que lenguaje tenes ganas de aprender hoy?"
+  - text: "Hola! Que hermoso día para estar vivo... que lenguaje te llama hoy?"
+
+  utter_goodbye:
+  - text: "Nos re vimoss!"
+  - text: "Hasta luego!"
+  - text: "See you later aligator"
+  - text: "Chauuu! Que tengas un buen día"
+  - text: "Adioss, besos a la flia!"
+  
+  utter_welcome:
+  - text: "No hay porque pequeño padawan! Que la fuerza te acompañe"
+  - text: "Un placer ayudarte... que sigas bien y no te olvides de cepillarte los dientes!"
+  - text: "Gracias a vos! Hasta luego y no te olvides de tomar mucha agua"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

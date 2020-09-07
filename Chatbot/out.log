@@ -1,0 +1,92 @@
+2020-08-31 16:08:13,245 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-08-31 16:08:20,315 [INFO ]  Rasa server is up and running.
+2020-08-31 16:08:25,405 [ERROR]  Exception occurred while handling uri: 'http://127.0.0.1:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-08-31 16:08:26,454 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-08-31 16:09:25,206 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-08-31 16:09:26,250 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-09-01 15:33:03,486 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-01 15:33:11,949 [INFO ]  Rasa server is up and running.
+2020-09-01 15:33:13,416 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-09-01 15:34:20,951 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-09-01 15:35:29,798 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-09-01 15:37:15,568 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-09-01 15:38:01,119 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Expected object or value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2020-09-01 15:38:15,577 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-09-01 15:38:57,369 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/request.py", line 173, in load_json
+    self.parsed_json = loads(self.body)
+ValueError: Expected object or value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/request.py", line 167, in json
+    self.load_json()
+  File "/home/chequeado/Documentos/Facultad/Diseño/Chatbot/env/lib/python3.6/site-packages/sanic/request.py", line 177, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2020-09-01 15:42:29,830 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-01 15:42:36,873 [INFO ]  Rasa server is up and running.
