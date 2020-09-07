@@ -9,6 +9,7 @@
 `sudo apt install python3-dev python3-pip`
 
 2. Move to Chatbot folder and run <br/>
+`cd Chatbot` 
 `python3 -m venv ./venv`<br/>
 `source ./venv/bin/activate`<br/>
 `pip install -r requirements.txt`
