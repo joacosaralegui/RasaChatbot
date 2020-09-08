@@ -1,17 +1,21 @@
 ## path_1
 * greet
   - utter_greet
+* greet
+  - utter_course_request
 * course
-  - respond_course
-* goodbye
+  - utter_welcome
+* welcome
   - utter_goodbye
 
-## path_2
+## path_1
 * greet
   - utter_greet
+* greet
+  - utter_course_request
 * course
-  - respond_course
-* thanks
   - utter_welcome
-* goodbye
+* course
+  - utter_welcome
+* welcome
   - utter_goodbye

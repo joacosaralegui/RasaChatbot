@@ -4,35 +4,37 @@ intents:
   - course
   - confirm
   - deny
+  - welcome
   - thanks
 
 actions:
   - utter_greet
   - utter_goodbye
+  - utter_course_request
   - utter_welcome
-  - respond_course
-
-entities:
-  - language
 
 responses:
   utter_greet:
-  - text: "Buen día! Que lenguaje tenes ganas de aprender?"
-  - text: "Holaaa! :D Que lenguaje tenes ganas de aprender hoy?"
-  - text: "Hola! Que hermoso día para estar vivo... que lenguaje te llama hoy?"
+  - text: "Hola!"
+  - text: "Buenas tardes!! :)"
+  - text: "Buenos dias" 
+  - text: "Holiss"
+  - text: "Buenas"
 
   utter_goodbye:
-  - text: "Nos re vimoss!"
-  - text: "Hasta luego!"
-  - text: "See you later aligator"
-  - text: "Chauuu! Que tengas un buen día"
-  - text: "Adioss, besos a la flia!"
+  - text: "/stop"
+  
+  utter_course_request:
+  - text: "Me gustaría aprender Python"
+  - text: "Me gustaría aprender Java"
+  - text: "Me gustaría aprender C++"
+  - text: "Tengo ganas de aprender Python"
+  - text: "Tengo ganas de aprender Java"
+  - text: "Tengo ganas de aprender C++"
   
   utter_welcome:
-  - text: "No hay porque pequeño padawan! Que la fuerza te acompañe"
-  - text: "Un placer ayudarte... que sigas bien y no te olvides de cepillarte los dientes!"
-  - text: "Gracias a vos! Hasta luego y no te olvides de tomar mucha agua"
-  
+  - text: "Muchas gracias!!"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

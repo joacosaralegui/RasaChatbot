@@ -67,6 +67,8 @@ div.chats::-webkit-scrollbar {
 }
 
 .botMsg {
+    animation: animateElement linear 0.2s;
+    animation-iteration-count: 1;
     float: left;
     margin-top: 5px;
     background: white;

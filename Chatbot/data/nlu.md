@@ -1,34 +1,3 @@
-## intent:greet
-- hola
-- buenas tardes
-- buenos dias
-- holis
-- buenas
-
-## intent:goodbye
-- chau
-- adios
-- nos vemos
-- hasta luego
-
-## intent: course/python
-- [Python](language)
-- me gustaría aprender [Python](language)
-- tengo ganas de aprender [Python](language)
-- quiero programar en [Python](language)
-
-## intent: course/java
-- [Java](language)
-- me gustaría aprender [Java](language)
-- tengo ganas de aprender [Java](language)
-- quiero programar en [Java](language)
-
-## intent: course/cpp
-- [C++](language)
-- me gustaría aprender [C++](language)
-- tengo ganas de aprender [C++](language)
-- quiero programar en [C++](language)
-
 ## intent:confirm
     - si
     - dale 
@@ -48,3 +17,25 @@
     - gracias
     - perfecto, mil gracias
     - genial, muchas gracias
+
+## intent:greet
+    - Buen día! Que lenguaje tenes ganas de aprender?
+    - Holaaa! :D Que lenguaje tenes ganas de aprender hoy?
+    - Hola! Que hermoso día para estar vivo... que lenguaje te llama hoy?
+
+## intent:goodbye
+    - Nos re vimoss!
+    - Hasta luego!
+    - See you later aligator"
+    - Chauuu! Que tengas un buen día
+    - Adioss, besos a la flia!
+  
+## intent:welcome
+    - No hay porque pequeño padawan! Que la fuerza te acompañe
+    - Un placer ayudarte... que sigas bien y no te olvides de cepillarte los dientes!
+    - Gracias a vos! Hasta luego y no te olvides de tomar mucha agua
+
+## intent:course
+    - Que buena idea! Te paso un link de un curso: https://learnpython.org
+    - Java queŕes aprender? Ok. Acá va un cursito: https://www.codecademy.com/learn/learn-java
+    - C++?? Acá va el cursito: https://www.learncpp.com/. Suerte con esos punteros!!
